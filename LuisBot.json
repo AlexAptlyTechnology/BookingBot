@@ -1,4 +1,4 @@
-{
+ {
   "luis_schema_version": "3.0.0",
   "versionId": "0.1",
   "name": "LuisBot",
@@ -69,18 +69,11 @@
       "activated": true
     }
   ],
-  "regex_features": [
-    {
-      "name": "AirportCodeRegex",
-      "pattern": "[a-z]{3}",
-      "activated": true
-    },
-    {
-      "name": "BookingCodeRegex",
-      "pattern": "[a-z]{5}[1-9]{1}",
-      "activated": true
-    }
-  ],
+  "regex_features": [{
+    "name": "AirportCodeRegex",
+    "pattern": "[a-z]{3}",
+    "activated": true
+  }],
   "patterns": [],
   "utterances": [{
       "text": "best hotels in seattle",
@@ -239,13 +232,11 @@
     {
       "text": "show me the reviews of the amazing bot resort",
       "intent": "ShowHotelsReviews",
-      "entities": [
-        {
-          "entity": "Hotel",
-          "startPos": 23,
-          "endPos": 44
-        }
-      ]
+      "entities": [{
+        "entity": "Hotel",
+        "startPos": 23,
+        "endPos": 44
+      }]
     },
     {
       "text": "show my reservation qwert1",
